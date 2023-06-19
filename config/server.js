@@ -2,6 +2,9 @@ const setCustomCSPHeader = (ctx) => {
   ctx.set('Content-Security-Policy', "connect-src 'self' http://localhost:1337");
   ctx.set('Content-Security-Policy', "connect-src 'self' http://ec2-54-197-99-25.compute-1.amazonaws.com:1337");
   ctx.set('Content-Security-Policy', "connect-src 'self' http://54.85.37.217");
+  ctx.set('Content-Security-Policy', "connect-src 'self' https://localhost:1337");
+  ctx.set('Content-Security-Policy', "connect-src 'self' https://ec2-54-197-99-25.compute-1.amazonaws.com:1337");
+  ctx.set('Content-Security-Policy', "connect-src 'self' https://54.85.37.217");
 };
 
 module.exports = ({ env }) => ({
